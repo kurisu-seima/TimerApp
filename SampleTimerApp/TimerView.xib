@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimerView" customModule="SampleTimerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="countDwonLabel" destination="hdD-pq-2mY" id="cEl-bS-Hgc"/>
+                <outlet property="timerActionLabel" destination="XMv-V9-0DQ" id="8rG-ig-mYf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="386"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdD-pq-2mY">
+                    <rect key="frame" x="138" y="175" width="122" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMv-V9-0DQ">
+                    <rect key="frame" x="138" y="231" width="122" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="スタート"/>
+                    <connections>
+                        <action selector="startButtonDidTapped:" destination="-1" eventType="touchUpInside" id="kp9-34-BfR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XMv-V9-0DQ" firstAttribute="top" secondItem="hdD-pq-2mY" secondAttribute="bottom" constant="20" id="K5b-8l-YR2"/>
+                <constraint firstItem="XMv-V9-0DQ" firstAttribute="trailing" secondItem="hdD-pq-2mY" secondAttribute="trailing" id="YvD-cJ-sQM"/>
+                <constraint firstItem="XMv-V9-0DQ" firstAttribute="leading" secondItem="hdD-pq-2mY" secondAttribute="leading" id="jDb-fd-9pb"/>
+                <constraint firstItem="hdD-pq-2mY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sId-s7-fM6"/>
+                <constraint firstItem="hdD-pq-2mY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tHA-SY-Snw"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="67" y="161"/>
+        </view>
+    </objects>
+</document>
